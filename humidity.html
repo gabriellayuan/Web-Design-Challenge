@@ -1,0 +1,107 @@
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Visualization - Landing</title>
+	
+	<!-- Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="page.css">
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation  Bar-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="landing.html"><span class="latitude">Latitude</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparison.html">Comparsion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</nav>
+
+<!-- Content Section -->
+<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-7">
+					<div class="box">
+						<div class="header">
+							<h1 class="text-secondary">Humidity</h1>
+							<hr class="light">
+						</div>
+						<div class="content">
+							<img src="Resources/Fig2.png" class="img-fluid" alt="Humidity" >
+                            <p class="text-secondary">Humidity does not show a strong correlation to latitude. The visualization shows a great variety of humidity percentages at different latitudes. Therefore, we cannot conclude that there is a conclusive pattern between humidity and latitude.</p>
+                        </div>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-5">
+					<div class="box">
+						<div class="header">
+							<h1 class="text-secondary">Visualizations</h1>
+							<hr class="light">
+						</div>
+						<div class="content-fluid">
+                            <div>
+                                <div class="row padding">
+                                    <div class="col-sm-6">
+                                        <a href="temperature.html"><img src="Resources/Fig1.png" class="img-fluid" alt="Max Temperature" ></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="humidity.html"><img style="border: 5px solid rgb(255, 32, 169);" src="Resources/Fig2.png" class="img-fluid" alt="Humidity"></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="cloudiness.html"><img src="Resources/Fig3.png" class="img-fluid"  alt="Cloudiness"></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                            <a href="wind.html"><img src="Resources/Fig4.png" class="img-fluid"  alt="Wind Speed"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+  
